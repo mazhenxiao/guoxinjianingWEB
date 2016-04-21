@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	<!--
+    	作者：mazhenxiao@gmail.com
+    	时间：2016-04-20
+    	描述：页面统一调用开始，放入layout文件里
+    -->
+    <link rel="stylesheet" href="js/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/main.css" /><!-- 页面公用css-->
+	<script src="js/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/bower_components/seajs/dist/sea.js"></script>
+	<script src="js/bower_components/seajs-preload/dist/seajs-preload.js"></script>
+<script>
+	 seajs.config({
+	 	vars:{path:"./js/bower_components",main:"./js/main",template:"./template"},//初始变量
+	 	// debug: true,
+	 	alias:{
+	 		"seajsCSS":"{path}/seajs-css/dist/seajs-css.js", //seajs中css引用
+	 		"seajsTEXT":"{path}/seajs-text/dist/seajs-text.js",//seajs引入模板
+	 		"underscore":"{path}/underscore/underscore-min.js",//强化js框架
+	 		"backbone":"{path}/backbone/backbone-min.js",//mvc框架
+	 		"main":"{main}/main.js" //页面通用js
+	 	},
+	 	//map:[[".js",".js?v="+new Date().getTime()]],
+	 	preload:["seajsCSS","seajsTEXT","underscore","backbone","main"]
+	 })
+	 
+</script>
+<!--页面统一调用结束-->
+	</head>
+	<body>
+		<article class="container">
+			<header class="Header">
+				<div class="w1150 row">
+					<div class="col-lg-6 text-left G-H-txt">欢迎您，访问国信嘉宁！</div>
+					<div class="col-lg-6 text-right G-H-right">
+						<p><a>登录</a>|<a>注 册 </a></p>
+						<p><a>测试账户</a>|<a>退 出 </a></p>
+					</div>
+				</div>
+			</header>
+			<!--导航-->
+			<nav class="Nav">
+				<div class="w1150 oh">
+					<p class="G-logo left"><img src="img/head_07.jpg" /></p>
+				<ul class="G-menu right">
+					<li class="action"><a href="#">首页</a></li>
+					<li><a href="#">存证 </a></li>
+					<li><a href="#">维权</a></li>
+					<li><a href="#">证书查询</a></li>
+					<li><a href="#">鉴证</a></li>
+					<li><a href="#">帮助中心</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">公开展示</a></li>
+					<li><a href="#">合作伙伴 </a></li>
+				</ul>
+				</div>
+				
+			</nav>
+			<!--banner-->
+			<section class=" bar"><div class="oh  Center"><img src="img/cz_03.jpg" /></div></section>
+			<!--当前位置-->
+			<section class="G-current">
+				<p class="w1150">当前位置：<a href="#">首页</a>&gt;<a href="#">存证</a></p>
+			</section>
+			<!--box-->
+			<section>
+				<div class="w1150 G-BOX">
+					<h4>存证介绍</h4>
+					
+					<div class="pad20">
+						<h5 class="title">存证介绍</h5>
+						<blockquote class="">
+							<p>是证明（案件）事实的材料，证据问题是诉讼的核心问题，全部诉讼活动实际上都是围绕证据的搜集和运用进行。</p>
+<p>《中华人民共和国合同法》已由中华人民共和国第九届全国人民代表大会第二次会议于1999 年3 月15 日通过，现予公布，自1999 年10 月1 日起施行，第二章合同的订立中规定：第十一条书面形式是指合同书、信件和数据电文（包括电报、电传、传真、电子数据交换和电子邮件）等可以有形地表现所载内容的形式。证据必须经过查证属实，才能作为定案的根据。</p>
+<p>《民事诉讼法》把证据分为：书证、物证、视听资料、证人证言、电子数据、当事人的陈述、鉴定意见、勘验笔录。其中电子数据指的是电子化技术形成的文字，数字等等，如电子邮件、聊天记录等等。</p>
+<p>第十一条书面形式是指合同书、信件和数据电文（包括电报、电传、传真、电子数据交换和电子邮件）等可以有形地表现所载内容的形式。</p>
+	<p>	2015年2月4日最高人民法院4日发布的一份司法解释显示，网上聊天记录、博客、微博客、手机短信、电子签名、域名等形成或者存储在电子介质中的信息可以视为民事案件中的证据。</p>
+				</blockquote>
+				<h5 class="title">存证操作</h5>
+					<blockquote class="">
+							<p>是证明（案件）事实的材料，证据问题是诉讼的核心问题，全部诉讼活动实际上都是围绕证据的搜集和运用进行。</p>
+<p>《中华人民共和国合同法》已由中华人民共和国第九届全国人民代表大会第二次会议于1999 年3 月15 日通过，现予公布，自1999 年10 月1 日起施行，第二章合同的订立中规定：第十一条书面形式是指合同书、信件和数据电文（包括电报、电传、传真、电子数据交换和电子邮件）等可以有形地表现所载内容的形式。证据必须经过查证属实，才能作为定案的根据。</p>
+<p>《民事诉讼法》把证据分为：书证、物证、视听资料、证人证言、电子数据、当事人的陈述、鉴定意见、勘验笔录。其中电子数据指的是电子化技术形成的文字，数字等等，如电子邮件、聊天记录等等。</p>
+<p>第十一条书面形式是指合同书、信件和数据电文（包括电报、电传、传真、电子数据交换和电子邮件）等可以有形地表现所载内容的形式。</p>
+	<p>	2015年2月4日最高人民法院4日发布的一份司法解释显示，网上聊天记录、博客、微博客、手机短信、电子签名、域名等形成或者存储在电子介质中的信息可以视为民事案件中的证据。</p>
+				</blockquote>
+					</div>
+					<p class="Center"><button type="button" class="btn btn120">存 证</button></p>
+					<div class="cc">
+						
+						<p>存证是XXXXXXXXXXXXXXXXXXXXXXXXX！</p>
+<p>存证XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX！<a href="#">详见  存证使用帮助>></a></p>
+<p>存证的XXXXXXXXXXX资费标准。<a href="#">详见  存证使用帮助>></a></p>
+					</div>
+				</div>
+			</section>
+			<footer class="Footer mgT10">
+				<div class="w1150 oh">
+				<ul>
+					<li>帮助中心</li><li>功能介绍</li><li>操作手册</li><li>资费专区</li><li>认证查询</li>
+				</ul>
+				<ul>
+					<li>关于我们</li><li>网站声明</li><li>联系我们</li><li>友情链接</li>
+				</ul>
+				<ul>
+					<li>常见问题</li><li>怎么注册？</li><li>使用该平台收费吗？</li><li>怎么注册？</li><li>使用该平台收费吗？</li>
+				</ul>
+				<ul>
+					<li>联系方式</li><li>客服热线：4000000000</li><li>联系电话：0000000000000000</li><li>地址：*******************</li><li>知识产权法律顾问单位：
+**********（北京）有限责任公司</li>
+				</ul>
+				<ul>
+					<li>维权联盟</li><li>盈科律师事务所</li><li>邦之慧</li><li><a>更多</a></li>
+				</ul>
+				</div>
+			</footer>
+		</article>
+		
+		<!--
+        	作者：频道应用
+        	时间：2016-04-20
+        	描述：
+        -->
+       <script>
+       	  seajs.use(["./css/papers.css","./js/index.js"],function(){
+       	  	 //页面程序入口
+       	  })
+       	  
+       </script>
+	</body>
+</html>

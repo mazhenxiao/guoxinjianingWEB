@@ -1,4 +1,4 @@
-@import "push.less";
+@import "main.less";
 section{position: relative;top:0;left:0;}
 .G-bar{ background:#0D89BE;
     .carousel{ margin:0 auto;}
@@ -62,7 +62,16 @@ section{position: relative;top:0;left:0;}
 }
 .G-group{
     background:#F0F0F0 url(../img/bar3_07.gif) no-repeat center top; height:600px;
-    
+    .groupTeam{padding-top:336px;overflow: hidden;
+       width:1135px;margin:0 auto;
+        li{float:left;background:url(../img/yq_28.gif) no-repeat left top; width:193px;height: 193px;
+        text-align: center;line-height:193px; margin-left:120px;
+            &.more{font-size:25px; position:relative;top: 0;left:0;
+                a{text-decoration: none;color:#fff;display: block;width:190px;height:190px;border-radius:50%;border:#c00;position: absolute;top:0;left:1px;background:#0085e5;}
+            }
+            &:first-child{margin-left:0;}
+        }
+    }
 }
 .BTN-UP,.BTN-DOWN{z-index:100;display:block;width:54px;height:29px; background:url(../img/updown_24.png) no-repeat left top;position: absolute;left:50%;margin-left:-27px ;}
 .BTN-UP{top:0;background-position:0 -28px;}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	<!--
+    	作者：mazhenxiao@gmail.com
+    	时间：2016-04-20
+    	描述：页面统一调用开始，放入layout文件里
+    -->
+    <link rel="stylesheet" href="js/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/main.css" /><!-- 页面公用css-->
+	<script src="js/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/bower_components/seajs/dist/sea.js"></script>
+	<script src="js/bower_components/seajs-preload/dist/seajs-preload.js"></script>
+<script>
+	 seajs.config({
+	 	vars:{path:"./js/bower_components",main:"./js/main",template:"./template"},//初始变量
+	 	// debug: true,
+	 	alias:{
+	 		"seajsCSS":"{path}/seajs-css/dist/seajs-css.js", //seajs中css引用
+	 		"seajsTEXT":"{path}/seajs-text/dist/seajs-text.js",//seajs引入模板
+	 		"underscore":"{path}/underscore/underscore-min.js",//强化js框架
+	 		"backbone":"{path}/backbone/backbone-min.js",//mvc框架
+	 		"main":"{main}/main.js" //页面通用js
+	 	},
+	 	//map:[[".js",".js?v="+new Date().getTime()]],
+	 	preload:["seajsCSS","seajsTEXT","underscore","backbone","main"]
+	 })
+	 
+</script>
+<!--页面统一调用结束-->
+	</head>
+	<body>
+		<article class="container">
+			<header class="G-Header">
+				<div class="w980">
+					
+					<img src="img/logo_08.png" />
+					<div class="Right-info">
+						<p>空间使用信息： <span>11.8G </span>/ <span>20G</span></p>
+						<p class="proggress" style="width:180px;"><span style="width:11.8%;"></span></p>
+						<p><a href="#">使用帮助</a>  丨  <a href="#">详细介绍</a></p>
+					</div>
+				</div>
+			</header>
+			
+			 <section class="w980 oh min-tableBox">
+			 		<div class="left">
+			 			<h3 class="Left">服务单信息</h3>
+			 			<ul>
+			 			<li><label>用户账户：</label><span> 测试账户</span></li>
+						<li><label>代 理 商 ：</label><span>   ******************</span></li>
+						<li><label>服务类型：</label><span>   即时存证</span></li>
+						<li><label>服务单号：  </label><span>  *****************</span></li>
+						<li><label>创建时间：</label><span>   2016-03-29 14:29:30</span></li>
+						<li><label>服务状态：</label><span>   操作成功</span></li>
+						<li><label>二 维 码 ： </label><span><img src="img/ewm_45.jpg" /></span></li>
+			 			</ul>
+			 		
+			 		</div>
+			 		<div class="G-BOX">
+			 			<h4>即时存证</h4>
+			 			<div class="pad10 g-contents">
+			 				<h5>感谢您使用我们的服务！</h5>
+			 				<p class="p1">同时您也成功消费了本次服务次数，您仍然还有    1    次使用即时存证的服务次数 。</p>
+							<div class="p2">
+								<p>选择您想要继续的操作，您可以 ：</p>
+								<p class="p3">
+									<button type="button" class="btn btn-120">继续存证</button>
+									<button type="button" class="btn btn-120">不再存证</button>
+									<button type="button" class="btn btn-120">查看证书</button>
+								</p>
+							</div>
+							<div class="cz">
+								<h6>操作说明：</h6>
+								<p>继续存证是XXXXXXXXXXX</p>
+								<p>不再存证是XXXXXXXXXXX。<a href="#">详见  存证使用帮助！>></a></p>
+
+							</div>
+			 			</div>
+			 		</div>
+			 
+			 </section>
+			
+			
+		</article>
+		
+		<!--
+        	作者：频道应用
+        	时间：2016-04-20
+        	描述：
+        -->
+       <script>
+       	  seajs.use(["./css/minpapers.css","./js/index.js"],function(){
+       	  	 //页面程序入口
+       	  })
+       	  
+       </script>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	<!--
+    	作者：mazhenxiao@gmail.com
+    	时间：2016-04-20
+    	描述：页面统一调用开始，放入layout文件里
+    -->
+    <link rel="stylesheet" href="js/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/main.css" /><!-- 页面公用css-->
+	<script src="js/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/bower_components/seajs/dist/sea.js"></script>
+	<script src="js/bower_components/seajs-preload/dist/seajs-preload.js"></script>
+	<script src="js/source/iss.js"></script>
+<script>
+	 seajs.config({
+	 	vars:{path:"./js/bower_components",main:"./js/main",template:"./template"},//初始变量
+	 	// debug: true,
+	 	alias:{
+	 		"seajsCSS":"{path}/seajs-css/dist/seajs-css.js", //seajs中css引用
+	 		"seajsTEXT":"{path}/seajs-text/dist/seajs-text.js",//seajs引入模板
+	 		"underscore":"{path}/underscore/underscore-min.js",//强化js框架
+	 		"backbone":"{path}/backbone/backbone-min.js",//mvc框架
+	 		"main":"{main}/main.js" //页面通用js
+	 	},
+	 	//map:[[".js",".js?v="+new Date().getTime()]],
+	 	preload:["seajsCSS","seajsTEXT","underscore","backbone","main"]
+	 })
+	 
+</script>
+<!--页面统一调用结束-->
+	</head>
+	<body>
+		<article class="container">
+			<header class="G-Header">
+				<div class="w980">
+					
+					<img src="img/logo_08.png" />
+					<div class="Right-info">
+						<p>空间使用信息： <span>11.8G </span>/ <span>20G</span></p>
+						<p class="proggress" style="width:180px;"><span style="width:11.8%;"></span></p>
+						<p><a href="#">使用帮助</a>  丨  <a href="#">详细介绍</a></p>
+					</div>
+				</div>
+			</header>
+			
+			 <section class="w980 oh min-tableBox">
+			 		<div class="left">
+			 			<h3 class="Left">服务单信息</h3>
+			 			<ul>
+			 			<li><label>用户账户：</label><span> 测试账户</span></li>
+						<li><label>代 理 商 ：</label><span>   ******************</span></li>
+						<li><label>服务类型：</label><span>   即时存证</span></li>
+						<li><label>服务单号：  </label><span>  *****************</span></li>
+						<li><label>创建时间：</label><span>   2016-03-29 14:29:30</span></li>
+						<li><label>服务状态：</label><span>   操作成功</span></li>
+						<li><label>二 维 码 ： </label><span><img src="img/ewm_45.jpg" /></span></li>
+			 			</ul>
+			 		
+			 		</div>
+			 		<div class="G-BOX">
+			 			<h4>即时存证</h4>
+			 			<div class="pad10 g-contents">
+			 				<table class="minpapersform-form">
+			 					 <tr>
+			 					 	<th><span class="red">*</span>标题：</th>
+			 					 	<td>
+			 					 		<p class="oh"><input type="text" /></p>
+			 					 		<p class="error">请将您的文件设定一个新的名称，方便您的查找、管理</p>
+			 					 	</td>
+			 					 </tr>
+			 					  <tr>
+			 					 	<th><span class="red">*</span> 文件上传：</th>
+			 					 	<td>
+			 					 		<p class="oh"><input type="text" /><span class="btn btn-120 addFile">添加文件<input type="file" /></span></p>
+			 					 		<p class="error">上传文件支持的格式：任意；上传文件数量的限制：唯一；大小：≤50M。</p>
+			 					 	</td>
+			 					 </tr> 
+			 					  <tr>
+			 					 	<th>文件说明：</th>
+			 					 	<td>
+			 					 		<textarea name="" rows="" cols=""></textarea>
+			 					 		<p class="error">文件说明的字数限制：≤200字</p>
+			 					 	</td>
+			 					 </tr>
+			 					 <tr>
+			 					 	<th></th>
+			 					 	<td>
+			 					 		 <p class="buttonBox">
+							 	<button type="button" class="btn btn-120">即时存证</button>
+							 	<span class="checkboxBox"><input type="checkbox" id="checkbox" /><label for="checkbox">是否公开</label></span>
+							 </p>
+			 					 	</td>
+			 					 </tr>
+			 					 <tr class="footer">
+			 					 	<th>存证说明：</th>
+			 					 	<td>
+			 					 		<p>即时存证是直接将您的文件保存并生成有效电子版证书！</p>
+							<p>原文件名仍旧是非常重要的信息，我们会在存证过程中保留它。<a href="#">详见  存证使用帮助>></a></p>
+			 					 	</td>
+			 					 </tr>
+			 				</table>
+							
+							
+			 			</div>
+			 		</div>
+			 
+			 </section>
+			
+			
+		</article>
+		
+		<!--
+        	作者：频道应用
+        	时间：2016-04-20
+        	描述：
+        -->
+       <script>
+       	  seajs.use(["./css/minpapers.css","./js/index.js"],function(){
+       	  	 //页面程序入口
+       	  })
+       	  
+       </script>
+	</body>
+</html>
+

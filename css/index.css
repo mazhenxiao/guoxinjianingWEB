@@ -153,6 +153,8 @@ input[type=checked] {
 .btn {
   padding-left: 20px;
   padding-right: 20px;
+  background: #00b1fd;
+  box-shadow: 1px 1px 10px #0c8cc2 inset;
 }
 .btn120 {
   width: 120px;
@@ -162,6 +164,12 @@ input[type=checked] {
 }
 .pad10 {
   padding: 10px;
+}
+.pad20 {
+  padding: 20px;
+}
+.padV20 {
+  padding: 0 20px;
 }
 .pad0050 {
   padding: 0 50px !important;
@@ -247,6 +255,118 @@ input[type=checkbox] {
 input[type=radio]:first-child,
 input[type=checkbox]:first-child {
   margin-left: 0;
+}
+.container {
+  width: auto;
+  min-width: 1150px;
+  padding: 0;
+}
+.w1150 {
+  width: 1150px;
+  margin: 0 auto;
+}
+.Header {
+  background: url("../img/head_03.jpg") repeat-x left top;
+  height: 70px;
+}
+.Header .G-H-txt {
+  margin-top: 34px;
+  padding: 10px 0;
+}
+.Header .G-H-right {
+  padding-top: 10px;
+}
+.Header .G-H-right p {
+  padding-bottom: 10px 0;
+  vertical-align: middle;
+}
+.Header .G-H-right p a {
+  color: #5b5b5b;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.Nav .G-logo {
+  margin: 10px;
+}
+.Nav .G-menu {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.Nav .G-menu li {
+  float: left;
+  margin-left: 28px;
+}
+.Nav .G-menu li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  border-bottom: 3px solid #fff;
+  padding: 0 10px;
+  color: #5b5b5b;
+  text-decoration: none;
+}
+.Nav .G-menu li.action a,
+.Nav .G-menu li:hover a {
+  border-bottom-color: #147dc8;
+}
+.Footer {
+  height: 251px;
+  background: #147dc8;
+}
+.Footer div {
+  padding-top: 40px;
+}
+.Footer ul {
+  margin-left: 150px;
+  float: left;
+}
+.Footer ul:first-child {
+  margin-left: 0;
+}
+.Footer ul li {
+  color: #fff;
+  margin-bottom: 10px;
+  max-width: 200px;
+}
+.Footer ul li a {
+  color: #fff;
+}
+.Footer ul li:first-child {
+  border-bottom: #fff solid 1px;
+  padding-bottom: 5px;
+}
+.w1150 {
+  width: 1150px;
+  margin: 0 auto;
+}
+.G-current {
+  padding: 10px 0;
+}
+.G-current a {
+  color: #5b5b5b;
+  margin: 0 3px;
+}
+.G-BOX {
+  border: #ccc solid 1px;
+}
+.G-BOX H4 {
+  overflow: hidden;
+  margin-top: 0;
+  color: #fff;
+  background: #147dc8;
+  height: 45px;
+  line-height: 45px;
+}
+.G-BOX H4:before {
+  display: block;
+  content: "";
+  width: 5px;
+  height: 16px;
+  margin: 15px 15px 0 10px;
+  background: #fff;
+  float: left;
 }
 section {
   position: relative;
@@ -420,6 +540,43 @@ section {
 .G-group {
   background: #F0F0F0 url(../img/bar3_07.gif) no-repeat center top;
   height: 600px;
+}
+.G-group .groupTeam {
+  padding-top: 336px;
+  overflow: hidden;
+  width: 1135px;
+  margin: 0 auto;
+}
+.G-group .groupTeam li {
+  float: left;
+  background: url(../img/yq_28.gif) no-repeat left top;
+  width: 193px;
+  height: 193px;
+  text-align: center;
+  line-height: 193px;
+  margin-left: 120px;
+}
+.G-group .groupTeam li.more {
+  font-size: 25px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.G-group .groupTeam li.more a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: #c00;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  background: #0085e5;
+}
+.G-group .groupTeam li:first-child {
+  margin-left: 0;
 }
 .BTN-UP,
 .BTN-DOWN {

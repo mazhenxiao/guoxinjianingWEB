@@ -634,4 +634,168 @@ input[type=checkbox]:first-child {
 .ui-dialog-right-bottom .ui-dialog-arrow-b {
   bottom: 15px;
 }
-/*# sourceMappingURL=push.css.map */
+.w980 {
+  width: 980px;
+  margin: 0 auto;
+}
+.G-Header {
+  background: #147dc8;
+  height: 114px;
+  overflow: hidden;
+  text-align: right;
+}
+.G-Header img {
+  margin-top: 20px;
+  float: left;
+}
+.G-Header .Right-info {
+  float: right;
+  margin-top: 17px;
+  color: #fff;
+}
+.G-Header .Right-info a {
+  color: #fff !important;
+}
+.G-Header .Right-info P {
+  margin-bottom: 5px;
+}
+.min-tableBox {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.min-tableBox div.left {
+  width: 240px;
+  height: 568px;
+  border: #ccc solid 1px;
+  background: #f3f3f3;
+}
+.min-tableBox div.left h3 {
+  height: 45px;
+  line-height: 45px;
+  background: #e7e7e7;
+  margin: 0;
+  text-indent: 2rem;
+}
+.min-tableBox div.left ul {
+  padding: 0 10px;
+}
+.min-tableBox div.left ul li {
+  height: 40px;
+  line-height: 40px;
+  background: url(../img/d_52.jpg) repeat-x left top;
+  font-size: 14px;
+}
+.min-tableBox div.left ul li:first-child {
+  background: none;
+}
+.min-tableBox div.left ul li label {
+  font-weight: normal;
+}
+.min-tableBox div.left ul li img {
+  vertical-align: top;
+}
+.min-tableBox .G-BOX {
+  margin-left: 270px;
+  height: 568px;
+}
+.g-contents {
+  padding: 0 35px;
+}
+.g-contents h5 {
+  font-size: 24px;
+  color: #0d89be;
+  padding: 25px 0;
+}
+.g-contents p {
+  font-size: 16px;
+}
+.g-contents .p1 {
+  min-height: 90px;
+}
+.g-contents .p2 {
+  min-height: 150px;
+}
+.g-contents .p3 {
+  margin-top: 30px;
+}
+.g-contents .p3 button {
+  margin-right: 30px;
+}
+.g-contents .cz h6 {
+  font-size: 14px;
+}
+.g-contents .cz p {
+  font-size: 14px;
+  color: #999;
+}
+.minpapersform-form {
+  margin-top: 50px;
+}
+.minpapersform-form th,
+.minpapersform-form td {
+  vertical-align: top;
+}
+.minpapersform-form th {
+  width: 150px;
+  text-align: right;
+  padding-top: 5px;
+}
+.minpapersform-form td .addFile {
+  position: relative;
+  top: 0;
+  left: 0;
+  float: left;
+  margin-left: 10px;
+}
+.minpapersform-form td .addFile input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px !important;
+  height: 40px;
+  opacity: 0;
+}
+.minpapersform-form td input[type="text"] {
+  float: left;
+}
+.minpapersform-form td input[type="text"],
+.minpapersform-form td textarea {
+  height: 30px;
+  width: 324px;
+  padding: 5px;
+}
+.minpapersform-form td input[type="file"] {
+  width: 60px;
+}
+.minpapersform-form td textarea {
+  min-height: 80px;
+}
+.minpapersform-form td .error {
+  font-size: 14px;
+  color: #999;
+}
+.buttonBox {
+  padding: 40px 0;
+}
+.buttonBox button {
+  margin-right: 30px;
+}
+.buttonBox label {
+  font-size: 12px;
+  font-weight: normal;
+  vertical-align: top;
+  padding-top: 8px;
+  margin-left: 5px;
+}
+.buttonBox input[type="checkbox"] {
+  vertical-align: top;
+  margin-top: 10px;
+}
+.footer p {
+  font-size: 12px;
+  color: #999;
+}
+.footer p:first-child {
+  padding-top: 5px;
+}
+/*# sourceMappingURL=minpapers.css.map */

@@ -1,3 +1,8 @@
+a:focus,
+a:hover,
+a {
+  color: #0d89be !important;
+}
 html,
 body {
   color: #5b5b5b;
@@ -153,6 +158,17 @@ input[type=checked] {
 .btn {
   padding-left: 20px;
   padding-right: 20px;
+  background: -webkit-linear-gradient(#00b1fd, #0c8cc2) !important;/* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#00b1fd, #0c8cc2) !important;/* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#00b1fd, #0c8cc2) !important;/* Firefox 3.6 - 15 */
+  background: linear-gradient(#00b1fd, #0c8cc2) !important;/* 标准的语法 */
+  color: #fff !important;
+}
+.btn:action {
+  background: -webkit-linear-gradient(#00b1fd, #0c8cc2) !important;/* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#00b1fd, #0c8cc2) !important;/* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#00b1fd, #0c8cc2) !important;/* Firefox 3.6 - 15 */
+  background: linear-gradient(#00b1fd, #0c8cc2) !important;/* 标准的语法 */
 }
 .btn120 {
   width: 120px;
@@ -162,6 +178,12 @@ input[type=checked] {
 }
 .pad10 {
   padding: 10px;
+}
+.pad20 {
+  padding: 20px;
+}
+.padV20 {
+  padding: 0 20px;
 }
 .pad0050 {
   padding: 0 50px !important;
@@ -248,116 +270,44 @@ input[type=radio]:first-child,
 input[type=checkbox]:first-child {
   margin-left: 0;
 }
-.container {
-  width: auto;
-  min-width: 1150px;
+.bar {
+  background: #F8F9FB;
+}
+.bar img {
+  width: 100%;
+}
+blockquote {
   padding: 0;
+  border: none;
+  font-size: 14px;
+  line-height: 125%;
 }
-.w1150 {
-  width: 1150px;
-  margin: 0 auto;
-}
-.Header {
-  background: url("../img/head_03.jpg") repeat-x left top;
-  height: 70px;
-}
-.Header .G-H-txt {
-  margin-top: 34px;
-  padding: 10px 0;
-}
-.Header .G-H-right {
-  padding-top: 10px;
-}
-.Header .G-H-right p {
-  padding-bottom: 10px 0;
-  vertical-align: middle;
-}
-.Header .G-H-right p a {
-  color: #5b5b5b;
-  text-decoration: none;
-  cursor: pointer;
-  margin: 0 5px;
-}
-.Nav .G-logo {
-  margin: 10px;
-}
-.Nav .G-menu {
-  overflow: hidden;
-  margin-top: 10px;
-}
-.Nav .G-menu li {
-  float: left;
-  margin-left: 28px;
-}
-.Nav .G-menu li a {
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  font-size: 16px;
-  border-bottom: 3px solid #fff;
-  padding: 0 10px;
-  color: #5b5b5b;
-  text-decoration: none;
-}
-.Nav .G-menu li.action a,
-.Nav .G-menu li:hover a {
-  border-bottom-color: #147dc8;
-}
-.Footer {
-  height: 251px;
-  background: #147dc8;
-}
-.Footer div {
-  padding-top: 40px;
-}
-.Footer ul {
-  margin-left: 150px;
-  float: left;
-}
-.Footer ul:first-child {
-  margin-left: 0;
-}
-.Footer ul li {
-  color: #fff;
-  margin-bottom: 10px;
-  max-width: 200px;
-}
-.Footer ul li a {
-  color: #fff;
-}
-.Footer ul li:first-child {
-  border-bottom: #fff solid 1px;
-  padding-bottom: 5px;
-}
-.w1150 {
-  width: 1150px;
-  margin: 0 auto;
-}
-.G-current {
-  padding: 10px 0;
-}
-.G-current a {
-  color: #5b5b5b;
-  margin: 0 3px;
-}
-.G-BOX {
-  border: #ccc solid 1px;
-}
-.G-BOX H4 {
+H5.title {
   overflow: hidden;
   margin-top: 0;
-  color: #fff;
-  background: #147dc8;
+  border-bottom: #ccc solid 1px;
   height: 45px;
   line-height: 45px;
 }
-.G-BOX H4:before {
+H5.title:before {
   display: block;
   content: "";
-  width: 5px;
+  width: 3px;
   height: 16px;
-  margin: 15px 15px 0 10px;
-  background: #fff;
+  margin: 15px 15px 0 5px;
+  background: #5b5b5b;
   float: left;
 }
-/*# sourceMappingURL=main.css.map */
+.pad20 {
+  padding: 20px;
+}
+.cc {
+  padding-left: 400px;
+  padding-bottom: 80px;
+  color: #999;
+  margin-top: 30px;
+}
+.cc p {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=papers.css.map */
