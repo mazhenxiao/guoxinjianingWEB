@@ -10,7 +10,8 @@
 a:focus,
 a:hover,
 a {
-  color: #0d89be !important;
+  color: #0d89be;
+  text-decoration: none !important;
 }
 html,
 body {
@@ -58,7 +59,7 @@ textarea {
   float: right;
 }
 .red {
-  color: #c8000b;
+  color: #e00;
 }
 .fff {
   color: #fff;
@@ -115,7 +116,7 @@ input[type=text] {
   width: 100px;
 }
 .rad {
-  color: #c8000b;
+  color: #147dc8;
 }
 .gay {
   color: #a0a0a0;
@@ -306,7 +307,7 @@ input[type=checkbox]:first-child {
   height: 36px;
   line-height: 36px;
   padding: 0 28px 0 20px;
-  background: #c8000b url(../img/u1789.png) no-repeat 10px center;
+  background: #147dc8 url(../img/u1789.png) no-repeat 10px center;
   color: #fff;
   text-indent: 17px;
 }
@@ -346,6 +347,11 @@ input[type=checkbox]:first-child {
   font-size: 0;
 }
 .ui-dialog-button {
+  background: -webkit-linear-gradient(#00b1fd, #0c8cc2);/* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#00b1fd, #0c8cc2);/* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#00b1fd, #0c8cc2);/* Firefox 3.6 - 15 */
+  background: linear-gradient(#00b1fd, #0c8cc2);/* 标准的语法 */
+  color: #fff !important;
   margin-left: 15px;
   cursor: pointer;
   display: inline-block;
@@ -354,17 +360,24 @@ input[type=checkbox]:first-child {
   line-height: 30px;
   padding: 0 24px;
   width: auto;
-  border: 1px solid #ccc;
   border-radius: 2px;
   background-color: #fff;
   color: #666;
   outline: none;
   font-size: 14px;
 }
+.ui-dialog-button:action {
+  background: -webkit-linear-gradient(#00b1fd, #0c8cc2);/* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#00b1fd, #0c8cc2);/* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#00b1fd, #0c8cc2);/* Firefox 3.6 - 15 */
+  background: linear-gradient(#00b1fd, #0c8cc2);/* 标准的语法 */
+}
 .ui-dialog-buttons a:first-child {
   margin-left: 0;
+  color: #fff;
 }
 .ui-dialog-button:hover {
+  opacity: 0.9;
   color: #666;
   background-color: #f3f3f3;
 }
@@ -382,14 +395,23 @@ input[type=checkbox]:first-child {
 }
 /*高亮*/
 .ui-dialog-button-on {
-  background-color: #c8000b;
+  background: -webkit-linear-gradient(#fdc401, #d79a15) !important;/* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#fdc401, #d79a15) !important;/* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#fdc401, #d79a15) !important;/* Firefox 3.6 - 15 */
+  background: linear-gradient(#fdc401, #d79a15) !important;/* 标准的语法 */
+  color: #fff !important;
   color: #fff;
-  border-color: #B20008;
+}
+.ui-dialog-button-on:action {
+  background: -webkit-linear-gradient(#fdc401, #d79a15) !important;/* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#fdc401, #d79a15) !important;/* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#fdc401, #d79a15) !important;/* Firefox 3.6 - 15 */
+  background: linear-gradient(#fdc401, #d79a15) !important;/* 标准的语法 */
 }
 .ui-dialog-button-on:hover {
-  background-color: #B20008;
-  color: #fff;
-  border-color: #c8000b;
+  color: #fff !important;
+  text-decoration: none;
+  opacity: 0.9;
 }
 /*遮罩*/
 .ui-dialog-mask {
@@ -432,6 +454,7 @@ input[type=checkbox]:first-child {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 20px;
+  overflow: auto;
 }
 .msc-dialog-alert .ui-dialog-noTitle .ui-dialog-content {
   padding-top: 40px;
@@ -441,7 +464,6 @@ input[type=checkbox]:first-child {
   color: #111;
 }
 .msc-dialog-alert .ui-dialog-content p {
-  color: #999;
   font-size: 12px;
 }
 .msc-dialog-alert .ui-dialog-inner {

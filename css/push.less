@@ -2,7 +2,8 @@
 @f16:16px;
 @blur:#147dc8;
 @btnbulr:#0071C7;
-.bg(@red,@blue){
+
+.bg(@red:#00b1fd,@blue:#0c8cc2){
     background: -webkit-linear-gradient(@red, @blue); /* Safari 5.1 - 6.0 */
   background: -o-linear-gradient(@red, @blue); /* Opera 11.1 - 12.0 */
   background: -moz-linear-gradient(@red, @blue); /* Firefox 3.6 - 15 */
@@ -18,7 +19,7 @@
 .proggress{border:#fff solid 1px; border-radius:5px;
    span{display:block;background:#53b7ff;height:18px;}
 }
-a:focus, a:hover,a{color:#0d89be !important; }
+a:focus, a:hover,a{color:#0d89be; text-decoration: none !important; }
 html,
 body {
     color: #5b5b5b;
@@ -65,7 +66,7 @@ textarea {
     float: right;
 }
 .red {
-    color: #c8000b;
+    color:#e00;
 }
 .fff {
     color: #fff;
@@ -122,7 +123,7 @@ input[type=text] {
     width: 100px;
 }
 .rad {
-    color: #c8000b;
+    color: @blur;
 }
 .gay {
     color: #a0a0a0;
@@ -264,6 +265,7 @@ select {
     padding: 0;
     height: 24px;
     border: none;
+    
     border: #d4d4d4 solid 1px;
 }
 input[type=radio],
@@ -278,24 +280,24 @@ input[type=checkbox]:first-child {
 .ui-dialog-outer { text-align:left; outline:none;font-size:14px;position:relative;}
 .ui-dialog-border{ border:0 none; margin:0; border-collapse:collapse;}
 /*.ui-dialog-header, .ui-dialog-footer { padding:0; }*/
-.ui-dialog-iframe .ui-dialog-content{height:100%; background:url(../img/loading5.gif) no-repeat center center }
+.ui-dialog-iframe .ui-dialog-content{height:100%; background:url(../img/loading5.gif) no-repeat center center; }
 /*标题栏*/
 .ui-dialog-header{ position:relative;/*  height:36px; */ }
-.ui-dialog-title { overflow:hidden;cursor:default;height:36px; line-height:36px; padding:0 28px 0 20px;background:#c8000b url(../img/u1789.png) no-repeat 10px center;color:#fff; text-indent:17px }
+.ui-dialog-title { overflow:hidden;cursor:default;height:36px; line-height:36px; padding:0 28px 0 20px;background:@blur url(../img/u1789.png) no-repeat 10px center;color:#fff; text-indent:17px }
 .ui-dialog-close{display:block; outline:none;background-position:left top;position: absolute;overflow:hidden;right: 10px;top: 10px;height: 18px;width: 18px;text-indent:-9999em;cursor:pointer; background-image: url(../img/x.png)}
 .ui-dialog-close:hover{text-decoration:none;background-position:left bottom;}
 /*loading*/
 .ui-dialog-loading {width:80px;height: 50px;overflow: hidden;background: url('../img/loading-32-32.gif') no-repeat 30px center;line-height: 50px;padding-left: 80px;font-size: 16px;}
 /*按钮组*/
 .ui-dialog-buttons{padding:20px; text-align:center; white-space:nowrap;font-size:0;}
-.ui-dialog-button{ margin-left:15px;cursor: pointer; display: inline-block; text-align: center;height:30px;line-height:30px;padding:0 24px;width:auto;border: 1px solid #ccc; border-radius: 2px; background-color:#fff;color:#666;outline:none;font-size:14px;}
-.ui-dialog-buttons a:first-child{margin-left:0;}
-.ui-dialog-button:hover{color:#666;background-color:#f3f3f3;}
+.ui-dialog-button{ .bg();margin-left:15px;cursor: pointer; display: inline-block; text-align: center;height:30px;line-height:30px;padding:0 24px;width:auto; border-radius: 2px; background-color:#fff;color:#666;outline:none;font-size:14px;}
+.ui-dialog-buttons a:first-child{margin-left:0; color:#fff;;}
+.ui-dialog-button:hover{opacity:0.9;color:#666;background-color:#f3f3f3;}
 /*无效按钮*/
 .ui-dialog-button-disabled,.ui-dialog-button-disabled:hover,.ui-dialog-button-disabled:active{cursor:default;color:#666;background:#ddd;border-color:#999;filter:alpha(opacity=50); opacity:.5;text-decoration:none;}
 /*高亮*/
-.ui-dialog-button-on{background-color:#c8000b;color:#fff;border-color:#B20008;}
-.ui-dialog-button-on:hover{background-color:#B20008;color:#fff;border-color:#c8000b;}
+.ui-dialog-button-on{.bg(#fdc401,#d79a15) !important; color:#fff;}
+.ui-dialog-button-on:hover{color:#fff !important;text-decoration: none; opacity: 0.9;}
 /*遮罩*/
 .ui-dialog-mask { background-color:#000; filter:alpha(opacity=30); opacity:0.3; }
 .ui-dialog-inner{background:#FFF;border:1px solid #bab0b8; }
@@ -311,10 +313,10 @@ input[type=checkbox]:first-child {
 }
 /*扩展开始*/
 /*alert*/
-.msc-dialog-alert .ui-dialog-content{text-align:center;padding-top:30px;padding-bottom:20px;}
+.msc-dialog-alert .ui-dialog-content{text-align:center;padding-top:30px;padding-bottom:20px; overflow: auto;}
 .msc-dialog-alert .ui-dialog-noTitle .ui-dialog-content{padding-top:40px;}
 .msc-dialog-alert .ui-dialog-content h3{font-size:16px;color:#111;}
-.msc-dialog-alert .ui-dialog-content p{color:#999;font-size:12px;}
+.msc-dialog-alert .ui-dialog-content p{;font-size:12px;}
 .msc-dialog-alert .ui-dialog-inner{border:none;}
 /*简单提示*/
 .msc-dialog-tips .ui-dialog-border{border-color:#ccc;}

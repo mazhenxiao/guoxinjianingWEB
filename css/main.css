@@ -1,3 +1,18 @@
+.proggress {
+  border: #fff solid 1px;
+  border-radius: 5px;
+}
+.proggress span {
+  display: block;
+  background: #53b7ff;
+  height: 18px;
+}
+a:focus,
+a:hover,
+a {
+  color: #0d89be;
+  text-decoration: none !important;
+}
 html,
 body {
   color: #5b5b5b;
@@ -44,7 +59,7 @@ textarea {
   float: right;
 }
 .red {
-  color: #c8000b;
+  color: #e00;
 }
 .fff {
   color: #fff;
@@ -101,7 +116,7 @@ input[type=text] {
   width: 100px;
 }
 .rad {
-  color: #c8000b;
+  color: #147dc8;
 }
 .gay {
   color: #a0a0a0;
@@ -153,6 +168,17 @@ input[type=checked] {
 .btn {
   padding-left: 20px;
   padding-right: 20px;
+  background: -webkit-linear-gradient(#00b1fd, #0c8cc2) !important;/* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#00b1fd, #0c8cc2) !important;/* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#00b1fd, #0c8cc2) !important;/* Firefox 3.6 - 15 */
+  background: linear-gradient(#00b1fd, #0c8cc2) !important;/* 标准的语法 */
+  color: #fff !important;
+}
+.btn:action {
+  background: -webkit-linear-gradient(#00b1fd, #0c8cc2) !important;/* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#00b1fd, #0c8cc2) !important;/* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#00b1fd, #0c8cc2) !important;/* Firefox 3.6 - 15 */
+  background: linear-gradient(#00b1fd, #0c8cc2) !important;/* 标准的语法 */
 }
 .btn120 {
   width: 120px;
@@ -162,6 +188,12 @@ input[type=checked] {
 }
 .pad10 {
   padding: 10px;
+}
+.pad20 {
+  padding: 20px;
+}
+.padV20 {
+  padding: 0 20px;
 }
 .pad0050 {
   padding: 0 50px !important;
@@ -247,6 +279,382 @@ input[type=checkbox] {
 input[type=radio]:first-child,
 input[type=checkbox]:first-child {
   margin-left: 0;
+}
+/*弹出层*/
+.ui-dialog-outer {
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  position: relative;
+}
+.ui-dialog-border {
+  border: 0 none;
+  margin: 0;
+  border-collapse: collapse;
+}
+/*.ui-dialog-header, .ui-dialog-footer { padding:0; }*/
+.ui-dialog-iframe .ui-dialog-content {
+  height: 100%;
+  background: url(../img/loading5.gif) no-repeat center center;
+}
+/*标题栏*/
+.ui-dialog-header {
+  position: relative;
+/*  height:36px; */ }
+.ui-dialog-title {
+  overflow: hidden;
+  cursor: default;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 28px 0 20px;
+  background: #147dc8 url(../img/u1789.png) no-repeat 10px center;
+  color: #fff;
+  text-indent: 17px;
+}
+.ui-dialog-close {
+  display: block;
+  outline: none;
+  background-position: left top;
+  position: absolute;
+  overflow: hidden;
+  right: 10px;
+  top: 10px;
+  height: 18px;
+  width: 18px;
+  text-indent: -9999em;
+  cursor: pointer;
+  background-image: url(../img/x.png);
+}
+.ui-dialog-close:hover {
+  text-decoration: none;
+  background-position: left bottom;
+}
+/*loading*/
+.ui-dialog-loading {
+  width: 80px;
+  height: 50px;
+  overflow: hidden;
+  background: url('../img/loading-32-32.gif') no-repeat 30px center;
+  line-height: 50px;
+  padding-left: 80px;
+  font-size: 16px;
+}
+/*按钮组*/
+.ui-dialog-buttons {
+  padding: 20px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 0;
+}
+.ui-dialog-button {
+  background: -webkit-linear-gradient(#00b1fd, #0c8cc2);/* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#00b1fd, #0c8cc2);/* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#00b1fd, #0c8cc2);/* Firefox 3.6 - 15 */
+  background: linear-gradient(#00b1fd, #0c8cc2);/* 标准的语法 */
+  color: #fff !important;
+  margin-left: 15px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 24px;
+  width: auto;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #666;
+  outline: none;
+  font-size: 14px;
+}
+.ui-dialog-button:action {
+  background: -webkit-linear-gradient(#00b1fd, #0c8cc2);/* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#00b1fd, #0c8cc2);/* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#00b1fd, #0c8cc2);/* Firefox 3.6 - 15 */
+  background: linear-gradient(#00b1fd, #0c8cc2);/* 标准的语法 */
+}
+.ui-dialog-buttons a:first-child {
+  margin-left: 0;
+  color: #fff;
+}
+.ui-dialog-button:hover {
+  opacity: 0.9;
+  color: #666;
+  background-color: #f3f3f3;
+}
+/*无效按钮*/
+.ui-dialog-button-disabled,
+.ui-dialog-button-disabled:hover,
+.ui-dialog-button-disabled:active {
+  cursor: default;
+  color: #666;
+  background: #ddd;
+  border-color: #999;
+  filter: alpha(opacity=50);
+  opacity: .5;
+  text-decoration: none;
+}
+/*高亮*/
+.ui-dialog-button-on {
+  background: -webkit-linear-gradient(#fdc401, #d79a15) !important;/* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#fdc401, #d79a15) !important;/* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#fdc401, #d79a15) !important;/* Firefox 3.6 - 15 */
+  background: linear-gradient(#fdc401, #d79a15) !important;/* 标准的语法 */
+  color: #fff !important;
+  color: #fff;
+}
+.ui-dialog-button-on:action {
+  background: -webkit-linear-gradient(#fdc401, #d79a15) !important;/* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#fdc401, #d79a15) !important;/* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#fdc401, #d79a15) !important;/* Firefox 3.6 - 15 */
+  background: linear-gradient(#fdc401, #d79a15) !important;/* 标准的语法 */
+}
+.ui-dialog-button-on:hover {
+  color: #fff !important;
+  text-decoration: none;
+  opacity: 0.9;
+}
+/*遮罩*/
+.ui-dialog-mask {
+  background-color: #000;
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+}
+.ui-dialog-inner {
+  background: #FFF;
+  border: 1px solid #bab0b8;
+}
+/*没有标题*/
+.ui-dialog-noTitle .ui-dialog-title {
+  display: none;
+}
+/*.ui-dialog-noTitle .ui-dialog-title-outer{height:16px;}*/
+.ui-dialog-noTitle .ui-dialog-close {
+  background-position: 0 0;
+}
+.ui-dialog-noTitle .ui-dialog-close:hover,
+.ui-dialog-noTitle .ui-dialog-close:active {
+  background-position: 0 -16px;
+}
+/*视觉*/
+@media screen and (min-width: 0) {
+  .ui-dialog-outer {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+  }
+  .ui-dialog-visible .ui-dialog-outer {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*扩展开始*/
+/*alert*/
+.msc-dialog-alert .ui-dialog-content {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  overflow: auto;
+}
+.msc-dialog-alert .ui-dialog-noTitle .ui-dialog-content {
+  padding-top: 40px;
+}
+.msc-dialog-alert .ui-dialog-content h3 {
+  font-size: 16px;
+  color: #111;
+}
+.msc-dialog-alert .ui-dialog-content p {
+  font-size: 12px;
+}
+.msc-dialog-alert .ui-dialog-inner {
+  border: none;
+}
+/*简单提示*/
+.msc-dialog-tips .ui-dialog-border {
+  border-color: #ccc;
+}
+.msc-dialog-tips .ui-dialog-content {
+  padding: 16px 30px 16px 38px;
+  color: #333;
+}
+.msc-dialog-tips .ui-dialog-title-outer {
+  display: none;
+}
+.msc-dialog-tips-icon {
+  position: absolute;
+  left: 16px;
+  top: 20px;
+  overflow: hidden;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.msc-dialog-tips-success-icon {
+  background-position: 0 -110px;
+}
+.msc-dialog-tips-warning-icon {
+  background-position: 0 -94px;
+}
+.msc-dialog-tips-error-icon {
+  background-position: 0 -78px;
+}
+/*loading*/
+.msc-dialog-loading .ui-dialog-header {
+  display: none;
+}
+/*v6的吸附*/
+.ui-dialog-top-left .ui-dialog-outer,
+.ui-dialog-top .ui-dialog-outer,
+.ui-dialog-top-right .ui-dialog-outer {
+  top: -8px;
+}
+.ui-dialog-bottom-left .ui-dialog-outer,
+.ui-dialog-bottom .ui-dialog-outer,
+.ui-dialog-bottom-right .ui-dialog-outer {
+  top: 8px;
+}
+.ui-dialog-left-top .ui-dialog-outer,
+.ui-dialog-left .ui-dialog-outer,
+.ui-dialog-left-bottom .ui-dialog-outer {
+  left: -8px;
+}
+.ui-dialog-right-top .ui-dialog-outer,
+.ui-dialog-right .ui-dialog-outer,
+.ui-dialog-right-bottom .ui-dialog-outer {
+  left: 8px;
+}
+.ui-dialog-arrow-a,
+.ui-dialog-arrow-b {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border: 0 dashed transparent;
+}
+.ui-dialog-top-left .ui-dialog-arrow-a,
+.ui-dialog-top .ui-dialog-arrow-a,
+.ui-dialog-top-right .ui-dialog-arrow-a {
+  bottom: -8px;
+  border-top: 8px solid #bab0b8;
+  border-bottom: 0 none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.ui-dialog-top-left .ui-dialog-arrow-b,
+.ui-dialog-top .ui-dialog-arrow-b,
+.ui-dialog-top-right .ui-dialog-arrow-b {
+  bottom: -7px;
+  border-top: 8px solid #fff;
+  border-bottom: 0 none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.ui-dialog-top-left .ui-dialog-arrow-a,
+.ui-dialog-top-left .ui-dialog-arrow-b {
+  left: 15px;
+}
+.ui-dialog-top .ui-dialog-arrow-a,
+.ui-dialog-top .ui-dialog-arrow-b {
+  left: 50%;
+  margin-left: -8px;
+}
+.ui-dialog-top-right .ui-dialog-arrow-a,
+.ui-dialog-top-right .ui-dialog-arrow-b {
+  right: 15px;
+}
+.ui-dialog-bottom-left .ui-dialog-arrow-a,
+.ui-dialog-bottom .ui-dialog-arrow-a,
+.ui-dialog-bottom-right .ui-dialog-arrow-a {
+  top: -8px;
+  border-bottom: 8px solid #bab0b8;
+  border-top: 0 none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.ui-dialog-bottom-left .ui-dialog-arrow-b,
+.ui-dialog-bottom .ui-dialog-arrow-b,
+.ui-dialog-bottom-right .ui-dialog-arrow-b {
+  top: -7px;
+  border-bottom: 8px solid #fff;
+  border-top: 0 none;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.ui-dialog-bottom-left .ui-dialog-arrow-a,
+.ui-dialog-bottom-left .ui-dialog-arrow-b {
+  left: 15px;
+}
+.ui-dialog-bottom .ui-dialog-arrow-a,
+.ui-dialog-bottom .ui-dialog-arrow-b {
+  margin-left: -8px;
+  left: 50%;
+}
+.ui-dialog-bottom-right .ui-dialog-arrow-a,
+.ui-dialog-bottom-right .ui-dialog-arrow-b {
+  right: 15px;
+}
+.ui-dialog-left-top .ui-dialog-arrow-a,
+.ui-dialog-left .ui-dialog-arrow-a,
+.ui-dialog-left-bottom .ui-dialog-arrow-a {
+  right: -8px;
+  border-left: 8px solid #bab0b8;
+  border-right: 0 none;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.ui-dialog-left-top .ui-dialog-arrow-b,
+.ui-dialog-left .ui-dialog-arrow-b,
+.ui-dialog-left-bottom .ui-dialog-arrow-b {
+  right: -7px;
+  border-left: 8px solid #fff;
+  border-right: 0 none;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.ui-dialog-left-top .ui-dialog-arrow-a,
+.ui-dialog-left-top .ui-dialog-arrow-b {
+  top: 15px;
+}
+.ui-dialog-left .ui-dialog-arrow-a,
+.ui-dialog-left .ui-dialog-arrow-b {
+  margin-top: -8px;
+  top: 50%;
+}
+.ui-dialog-left-bottom .ui-dialog-arrow-a,
+.ui-dialog-left-bottom .ui-dialog-arrow-b {
+  bottom: 15px;
+}
+.ui-dialog-right-top .ui-dialog-arrow-a,
+.ui-dialog-right .ui-dialog-arrow-a,
+.ui-dialog-right-bottom .ui-dialog-arrow-a {
+  left: -8px;
+  border-right: 8px solid #bab0b8;
+  border-left: 0 none;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.ui-dialog-right-top .ui-dialog-arrow-b,
+.ui-dialog-right .ui-dialog-arrow-b,
+.ui-dialog-right-bottom .ui-dialog-arrow-b {
+  left: -7px;
+  border-right: 8px solid #fff;
+  border-left: 0 none;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.ui-dialog-right-top .ui-dialog-arrow-a,
+.ui-dialog-right-top .ui-dialog-arrow-b {
+  top: 15px;
+}
+.ui-dialog-right .ui-dialog-arrow-a,
+.ui-dialog-right .ui-dialog-arrow-b {
+  margin-top: -8px;
+  top: 50%;
+}
+.ui-dialog-right-bottom .ui-dialog-arrow-a,
+.ui-dialog-right-bottom .ui-dialog-arrow-b {
+  bottom: 15px;
 }
 .container {
   width: auto;
@@ -359,5 +767,15 @@ input[type=checkbox]:first-child {
   margin: 15px 15px 0 10px;
   background: #fff;
   float: left;
+}
+#process_bar {
+  border: #ccc solid 1px;
+  margin: 10px 40px;
+  height: 25px;
+}
+#process_bar p {
+  background: #61c2ff;
+  height: 23px;
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */
